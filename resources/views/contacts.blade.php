@@ -1,7 +1,7 @@
 @extends ('layouts.default')
 @section('content')
 @if ($email==='')
-    <p>плохо</p>
+    <p>Не указан</p>
 @else
     <p>хорошо</p>
 @endif
