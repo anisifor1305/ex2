@@ -16,3 +16,8 @@ Route::get('/test_database', function () {
     $employee = new Employee();
     $employee -> save();
     });
+Route::get('/employee', [\App\Http\Controllers\EmployeeController::class, 'viewForm'] );
+
+Route::post('/employee', [\App\Http\Controllers\EmployeeController::class, 'formData'] );
+
+Route::get('/employee/{id}', [\App\Http\Controllers\EmployeeController::class, 'update'] );
